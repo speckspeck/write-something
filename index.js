@@ -1,11 +1,7 @@
-var posts = [
-
-]
+var posts = []
 
 var express = require("express")
-
 var bodyParser = require("body-parser")
-
 var app = express()
 
 app.use(express.static("public"))
@@ -21,6 +17,6 @@ app.post("/post", function(req, res){
 	res.send("")
 })
 
-app.listen(5000, function(){
-
+app.listen(process.env.PORT || 5000, function(){
+	console.log('Starting server')
 })
