@@ -1,4 +1,4 @@
-console.log("hello")
+console.log("hello there")
 
 var buttonElement = document.querySelector(".submit-button")
 var textareaElement = document.querySelector(".user-input")
